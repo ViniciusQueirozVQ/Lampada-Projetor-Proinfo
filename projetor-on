@@ -1,0 +1,23 @@
+#!/bin/bash
+#@author Vinicius Queiroz
+fabr_projetor=$(cat /usr/lampada-proinfo-ctl/fabricante.txt)
+
+case $fabr_projetor in
+  "benq")
+    # cd /usr/lampada-proinfo-ctl/
+    # cat pon.txt > /dev/ttyS1
+    echo -e "\x0D*pow=on#\x0D" > /dev/ttyS1
+    sleep 1
+    echo -e "\x0D*auto\x0D" > /dev/ttyS1
+    sleep 2
+    echo -e "\x0D*baud=9600\x0D" > /dev/ttyS1
+    sleep 1
+    ;;
+  "epson")
+    cd /bin/
+    epson-projector-cmd poweron
+      sleep 1
+    epson-projector-cmd sendcmd "SOURCE 1F"
+      sleep 2
+    ;;
+esac

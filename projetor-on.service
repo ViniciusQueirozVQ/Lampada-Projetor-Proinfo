@@ -1,0 +1,10 @@
+[Unit]
+Description=Executado ao Ligar
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/usr/lampada-proinfo-ctl/projetor-on
+
+[Install]
+WantedBy=multi-user.target
