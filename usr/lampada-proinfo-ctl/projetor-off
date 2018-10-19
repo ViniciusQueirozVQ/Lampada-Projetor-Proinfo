@@ -1,0 +1,21 @@
+#!/bin/bash
+fabr_projetor=$(cat /usr/lampada-proinfo-ctl/fabricante.txt)
+
+isReboot=$(systemctl list-jobs | grep 'reboot.target')
+
+if [ "$isReboot" == "" ]; then
+
+         case $fabr_projetor in
+           "benq") 
+           
+             # cd /usr/lampada-proinfo-ctl/
+             # cat poff.txt > /dev/ttyS1 
+             echo -e "\x0D*pow=off#\x0D" > /dev/ttyS1
+           ;;
+           "epson")
+             cd /bin/
+             epson-projector-cmd poweroff
+           ;;
+         esac
+fi
+
