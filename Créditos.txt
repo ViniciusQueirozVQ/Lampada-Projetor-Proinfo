@@ -1,3 +1,8 @@
-Agradeço ao Ailton por ter disponibilisado seus scripts. Foi uma base que eu realmente precisava sobre como que eu deveria criar o serviço e o script de instalação foi uma mão na roda.
-Meus Agradecimentos tambem ao Miguel, pois ele disponibilisou um pacote .deb com scripts similares ao de Ailton. Isso já me da uma ideia de como eu posso criar um deb e facilitar a instalação.
-E por fim agradeço o NTE - Taió & o Elton Nike Casa - <eltonnikecasa@gmail.com>. Pois ele criou uma distribuição baseada no Ubuntu 14.04 Mate para o projetor 71/2013 e 42/2010. Apenas Adaptei os seus scripts do Upstart para o SistemD.
+Agradeço ao Ailton por ter disponibilisado seus scripts. Foi uma base que eu realmente precisava sobre 
+como que eu deveria criar o serviço e o script de instalação foi uma mão na roda.
+Meus Agradecimentos tambem ao Miguel, pois ele disponibilisou um pacote .deb com scripts similares ao 
+de Ailton. Isso já me da uma ideia de como eu posso criar um deb e facilitar a instalação.
+E por fim agradeço o NTE - Taió & o Elton Nike Casa - <eltonnikecasa@gmail.com>. 
+Pois ele criou uma distribuição baseada no Ubuntu 14.04 Mate para o projetor 71/2013 e 42/2010. 
+Apenas Adaptei os seus scripts do Upstart para o SistemD.
+github Ailton: https://github.com/ailtonbsj
