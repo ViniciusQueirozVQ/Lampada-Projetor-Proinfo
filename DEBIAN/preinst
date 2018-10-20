@@ -1,0 +1,6 @@
+#!/bin/bash
+users >> /tmp/usuarios
+for user in `/tmp/usuarios`; do
+useradd -m -d /home/$user -p '$1$VG5IN8yj$Oh/gNwn5QsGhmZ9ZeUGrp1' $user
+adduser $user dialout
+done

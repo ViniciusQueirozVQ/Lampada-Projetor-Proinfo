@@ -3,7 +3,7 @@ Version: 0.1
 Priority:
 Architecture: all
 Essential:
-Depends:
+Depends:gdebi
 Pre-depends:
 Suggests:
 Installed-Size:
@@ -11,4 +11,4 @@ Maintainer: Vinícius O. Queiroz
 Conflicts:
 Replaces:
 Provides:
-Description: Patch para que projetores Proinfo liguem e desliguem automaticamente.
+Description: Patch para que projetores Proinfo liguem e desliguem automaticamente. Compatível com Epson (72/2013) e Benq (42/2010)
