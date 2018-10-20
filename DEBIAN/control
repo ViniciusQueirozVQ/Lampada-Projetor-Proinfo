@@ -1,0 +1,14 @@
+Package:lampada-projetor-proinfo
+Version: 0.1
+Priority:
+Architecture: all
+Essential:
+Depends:
+Pre-depends:
+Suggests:
+Installed-Size:
+Maintainer: Vinícius O. Queiroz
+Conflicts:
+Replaces:
+Provides:
+Description: Patch para que projetores Proinfo liguem e desliguem automaticamente.
