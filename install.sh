@@ -20,10 +20,4 @@ cp Lampada-Projetor-Proinfo/etc/* /
 cp Lampada-Projetor-Proinfo/bin/* /
 cp Lampada-Projetor-Proinfo/lib/* /
 
-echo "O projetor desligará a lâmpada em instantes..."
-
-systemctl enable projetor-on.service
-systemctl enable projetor-off.service
-systemctl start projetor-off.service
-
 
