@@ -3,10 +3,10 @@ Version: 0.1
 Priority:
 Architecture: all
 Essential:
-Depends:gdebi
+Depends:
 Pre-depends:
 Suggests:
-Installed-Size:
+Installed-Size:10,6
 Maintainer: Vinícius O. Queiroz
 Conflicts:
 Replaces:

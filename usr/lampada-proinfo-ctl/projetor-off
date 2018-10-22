@@ -1,5 +1,5 @@
 #!/bin/bash
-fabr_projetor=$(cat /usr/lampada-proinfo-ctl/fabricante.txt)
+vendor=$(cat /lib/lampada-projetor-proinfo-libs/vendor)
 
 isReboot=$(systemctl list-jobs | grep 'reboot.target')
 
@@ -8,7 +8,7 @@ if [ "$isReboot" == "" ]; then
          case $fabr_projetor in
            "benq") 
            
-             # cd /usr/lampada-proinfo-ctl/
+             # cd /lib/lampada-projetor-proinfo-libs/
              # cat poff.txt > /dev/ttyS1 
              echo -e "\x0D*pow=off#\x0D" > /dev/ttyS1
            ;;

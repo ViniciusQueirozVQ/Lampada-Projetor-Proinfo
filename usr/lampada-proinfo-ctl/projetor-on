@@ -1,10 +1,10 @@
 #!/bin/bash
-#@author Vinicius Queiroz
-fabr_projetor=$(cat /usr/lampada-proinfo-ctl/fabricante.txt)
+#@author Vinicius O. Queiroz
+vendor=$(cat /lib/lampada-projetor-proinfo-libs/vendor)
 
 case $fabr_projetor in
   "benq")
-    # cd /usr/lampada-proinfo-ctl/
+    # cd /lib/lampada-projetor-proinfo-libs/
     # cat pon.txt > /dev/ttyS1
     echo -e "\x0D*pow=on#\x0D" > /dev/ttyS1
     sleep 1
