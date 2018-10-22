@@ -50,12 +50,4 @@ Para desligar:
 
 	$ epson-projector-cmd poweroff
 
-Atenção: Não me responsabilizo por quaisquer problemas que possam acontecer.
-
- 	* Sua garantia pode ser anulada assim que você usar estes arquivos/Sistema.
-	* Eu não sou responsável por quaiquer problemas que possam ocorrer,
-	* ou se você foi está sendo demitido porque o projetor não liga mais. 
-	* Por favor faça alguma pesquisa se tiver alguma preocupação sobre os recursos incluídos nestes scripts/arquivos
-	 antes de instalar! Você está escolhendo fazer essas modificações e, se Você acredita que eu sou o culpado pelo seu problema, nunca nem vi!
-
-[PS. Mas eu vou trabalhar para deixar isso o mais funcional possível, e se tiver ajuda de alguém, melhor ainda.]
+Atenção: Não me responsabilizo por quaisquer problemas que possam acontecer!
