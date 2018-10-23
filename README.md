@@ -12,10 +12,10 @@ Seu protocolo de funcionamento é o rs232 disponível em:https://benqimage.blob.
 Para Instalar abra um terminal com Ctrl+Alt+T ou abra-o graficamente em sua distro favorita baseada no ubuntu.
 Navegue até a sua pasta, e digite ou copie e cole em seu terminal:
 	
-	$ sudo sh ./install.sh
+	$ sudo dpkg -i lampada-projetor-proinfo.deb
 Para remover:
 
-	$ sudo sh ./unistall.sh
+	$ sudo apt-get remove lampada-projetor-proinfo.deb
 
 Exemplos de comandos para o controle do projetor, A ideia é serem executados de maneira automatica, então só os coloquei aqui para facilitar a compreenção:
 
