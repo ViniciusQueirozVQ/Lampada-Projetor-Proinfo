@@ -2,8 +2,17 @@
 #@author Vinicius O. Queiroz
 vendor=$(cat /lib/lampada-projetor-proinfo-libs/vendor)
 
-case $fabr_projetor in
-  "benq")
+case $vendor in
+  
+  "epson")
+    cd /bin/
+    epson-projector-cmd poweron
+      sleep 1
+    epson-projector-cmd sendcmd "SOURCE 1F"
+      sleep 2
+    ;;
+
+   *) # If the projector manufacturer is benq or others.
     # cd /lib/lampada-projetor-proinfo-libs/
     # cat pon.txt > /dev/ttyS1
     echo -e "\x0D*pow=on#\x0D" > /dev/ttyS1
@@ -13,11 +22,6 @@ case $fabr_projetor in
     echo -e "\x0D*baud=9600\x0D" > /dev/ttyS1
     sleep 1
     ;;
-  "epson")
-    cd /bin/
-    epson-projector-cmd poweron
-      sleep 1
-    epson-projector-cmd sendcmd "SOURCE 1F"
-      sleep 2
-    ;;
+  
 esac
+exit

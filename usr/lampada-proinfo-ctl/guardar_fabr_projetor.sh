@@ -11,3 +11,4 @@ echo "Digite abaixo ..."
 read fabricante
 echo $fabricante >> /lib/lampada-projetor-proinfo-libs/vendor
 echo "OK. Você possui um Projetor" $fabricante
+exit
