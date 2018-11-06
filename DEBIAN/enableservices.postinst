@@ -1,12 +1,14 @@
 #!/bin/bash
+#Caso consiga automatizar essa etapa, ficaram apenas os serviços SistemD aqui.
+    echo "Digite 'epson' (sem aspas) caso o seu projetor seja um 71/2013 ou se voce tiver certeza de que o fabricante da lampada é Epson:"
+    echo "Ou digite 'benq' (sem aspas) caso o seu projetor seja um 42/2010 ou se voce tiver certeza de que o fabricante da lampada é a Benq:"
+    echo "Digite abaixo ..."
+    read fabricante
+    echo $fabricante > /lib/lampada-projetor-proinfo-libs/vendor
+    echo "OK. Você possui um Projetor" $fabricante
+######################################################################################################
 
-echo "Digite 'epson' (sem aspas) caso o seu projetor seja um 71/2013 ou se voce tiver certeza de que o fabricante da lampada é Epson:"
-echo "Ou digite 'benq' (sem aspas) caso o seu projetor seja um 42/2010 ou se voce tiver certeza de que o fabricante da lampada é a Benq:"
-echo "Digite abaixo ..."
-read fabricante
-echo $fabricante > /lib/lampada-projetor-proinfo-libs/vendor
-echo "OK. Você possui um Projetor" $fabricante
-
+#Iniciando os serviços
 systemctl enable projetor-on.service
 systemctl enable projetor-off.service
 systemctl start projetor-off.service
