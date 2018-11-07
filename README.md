@@ -13,6 +13,7 @@ Para Instalar abra um terminal com Ctrl+Alt+T ou abra-o graficamente em sua dist
 Navegue até a sua pasta, e digite ou copie e cole em seu terminal:
 	
 	$ sudo dpkg -i lampada-projetor-proinfo.deb
+	
 Para remover:
 
 	$ sudo apt-get remove lampada-projetor-proinfo.deb
