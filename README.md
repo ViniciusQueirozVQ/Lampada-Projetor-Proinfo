@@ -27,7 +27,7 @@ Para ligar
 	$ echo -e "\x0D*pow=on#\x0D" > /dev/ttyS1
    ou
    
-	$  cat pon.txt > /dev/ttyS1
+	$ cat pon.txt > /dev/ttyS1
  Epson:
 
 
@@ -41,8 +41,9 @@ Para Retornar o projetor as configurações padrões:
 Para desligar:
    
    Benq:
-
+   
 	$ echo -e "\x0D*pow=off#\x0D" > /dev/ttyS1
+	
    ou
    
 	$ cat poff.txt > /dev/ttyS1
