@@ -5,10 +5,9 @@ vendor=$(cat /lib/lampada-projetor-proinfo-libs/vendor)
 case $vendor in
   
   "epson")
-    cd /bin/
-    epson-projector-cmd poweron
+    /bin/epson-projector-cmd poweron
       sleep 1
-    epson-projector-cmd sendcmd "SOURCE 1F"
+    /bin/epson-projector-cmd sendcmd "SOURCE 1F"
       sleep 2
     ;;
 
