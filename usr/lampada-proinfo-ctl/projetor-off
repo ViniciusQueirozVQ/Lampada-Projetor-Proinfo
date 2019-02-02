@@ -7,8 +7,7 @@ if [ "$isReboot" == "" ]; then
 
          case $vendor in
            "epson") # If the projector manufacturer is Epson.
-             cd /bin/
-             epson-projector-cmd poweroff
+             /bin/epson-projector-cmd poweroff
            ;;
            
            *) # If the projector manufacturer is benq or others.
