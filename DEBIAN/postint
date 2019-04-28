@@ -1,6 +1,7 @@
 #!/bin/bash
 #Permissão de Execução
-chmod +x /bin/epson-projector-cmd
+   chmod +x /bin/epson-projector-cmd
+   chmod +x /usr/lampada-proinfo-ctl/projetor-o*
 
 # Garantindo participacao no grupo dialout
    adduser professor dialout
@@ -9,7 +10,3 @@ chmod +x /bin/epson-projector-cmd
    systemctl enable projetor-on.service
    systemctl enable projetor-off.service
    systemctl start projetor-off.service
-else
-   echo "Execute como superusuário 'root'"
-fi
-exit
