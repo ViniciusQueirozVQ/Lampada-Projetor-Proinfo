@@ -3,7 +3,7 @@ Version: 0.2
 Priority:
 Architecture: all
 Essential:
-Depends: xterm
+Depends:
 Pre-depends:
 Suggests:
 Installed-Size:10,6

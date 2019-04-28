@@ -1,13 +1,16 @@
 #!/bin/bash
 #Permissão de Execução
    chmod +x /bin/epson-projector-cmd
-   chmod +x /usr/lampada-proinfo-ctl/projetor-o*
+   chmod +x /usr/lampada-proinfo-ctl/projetor-on
+   chmod +x /usr/lampada-proinfo-ctl/projetor-off
 
 # Garantindo participacao no grupo dialout
    user=`getent passwd | cut -d \: -f1 | tail -n 1`
    gpasswd -a $user dialout
    gpasswd -a root dialout
+
 # Iniciando Servicos
    systemctl enable projetor-on.service
    systemctl enable projetor-off.service
+   systemctl start projetor-on.service
    systemctl start projetor-off.service

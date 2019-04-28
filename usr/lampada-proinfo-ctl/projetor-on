@@ -1,6 +1,6 @@
 #!/bin/bash
 #@author Vinicius O. Queiroz
-
+date=`date`
 /bin/epson-projector-cmd poweron
 echo "teste"
 echo -e "\x0D*pow=on#\x0D" > /dev/ttyS1
@@ -12,4 +12,4 @@ sleep 1
 
 echo -e "\x0D*baud=9600\x0D" > /dev/ttyS1
 
-exit
+echo -e "Ligou às $date\n" >> ~/lamp.log
