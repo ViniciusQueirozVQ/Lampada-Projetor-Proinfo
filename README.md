@@ -35,11 +35,7 @@ Para desligar:
    Benq:
    
 	$ echo -e "\x0D*pow=off#\x0D" > /dev/ttyS1
-	
-   ou
-   
-	$ cat poff.txt > /dev/ttyS1
-	
+
    Epson:	
 
 	$ epson-projector-cmd poweroff
