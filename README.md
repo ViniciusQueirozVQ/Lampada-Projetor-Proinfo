@@ -12,14 +12,16 @@ Seu protocolo de funcionamento é o rs232 disponível em:https://benqimage.blob.
 
 Exemplos de comandos para o controle do projetor, A ideia é serem executados de maneira automatica, então só os coloquei aqui para facilitar a compreenção:
 
-Ainda não pude testar:
+Ainda não pude testar (execute com superusuário):
 Para ligar
  Benq:
 
 	$ echo -e "\x0D*pow=on#\x0D" > /dev/ttyS1
-   ou
-   
-	$ cat pon.txt > /dev/ttyS1
+    	$ sleep 1
+   	$ echo -e "\x0D*auto\x0D" > /dev/ttyS1
+    	$ sleep 2
+    	$ echo -e "\x0D*baud=9600\x0D" > /dev/ttyS1
+
  Epson:
 
 
