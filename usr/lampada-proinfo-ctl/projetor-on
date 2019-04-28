@@ -12,8 +12,6 @@ case $vendor in
     ;;
 
    *) # If the projector manufacturer is benq or others.
-    # cd /lib/lampada-projetor-proinfo-libs/
-    # cat pon.txt > /dev/ttyS1
     echo -e "\x0D*pow=on#\x0D" > /dev/ttyS1
     sleep 1
     echo -e "\x0D*auto\x0D" > /dev/ttyS1
