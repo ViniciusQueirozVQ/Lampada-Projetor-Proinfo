@@ -1,24 +1,14 @@
 #!/bin/bash
 #@author Vinicius O. Queiroz
-vendor=$(cat /lib/lampada-projetor-proinfo-libs/vendor)
 
-case $vendor in
-  
-  "epson")
-    /bin/epson-projector-cmd poweron
-      sleep 1
-    /bin/epson-projector-cmd sendcmd "SOURCE 1F"
-      sleep 2
-    ;;
+/bin/epson-projector-cmd poweron
+echo -e "\x0D*pow=on#\x0D" > /dev/ttyS1
+sleep 1
 
-   *) # If the projector manufacturer is benq or others.
-    echo -e "\x0D*pow=on#\x0D" > /dev/ttyS1
-    sleep 1
-    echo -e "\x0D*auto\x0D" > /dev/ttyS1
-    sleep 2
-    echo -e "\x0D*baud=9600\x0D" > /dev/ttyS1
-    sleep 1
-    ;;
-  
-esac
+/bin/epson-projector-cmd sendcmd "SOURCE 1F"
+echo -e "\x0D*auto\x0D" > /dev/ttyS1
+sleep 1
+
+echo -e "\x0D*baud=9600\x0D" > /dev/ttyS1
+
 exit
