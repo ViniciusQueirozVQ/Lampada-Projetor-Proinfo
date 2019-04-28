@@ -1,8 +1,7 @@
 #!/bin/bash
-#Iniciando os serviços SystemD
+#Permissão de Execução
+chmod +x /bin/epson-projector-cmd
 
-if [ "$(id -u)" = "0" ]; 
-then
 # Garantindo participacao no grupo dialout
    adduser professor dialout
    adduser root dialout
