@@ -2,6 +2,7 @@
 #@author Vinicius O. Queiroz
 
 /bin/epson-projector-cmd poweron
+echo "teste"
 echo -e "\x0D*pow=on#\x0D" > /dev/ttyS1
 sleep 1
 

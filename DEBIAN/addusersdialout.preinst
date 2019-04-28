@@ -1,8 +1,0 @@
-#!/bin/bash
-if [ "$(id -u)" != "0" ]; then
- echo "Execute como superusuário 'root'"
- exit
-fi
-
-adduser professor dialout
-adduser root dialout
