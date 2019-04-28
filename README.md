@@ -9,14 +9,6 @@ O arquivo Epson-Projector-cmd é responsável por controlar os Projetores da Eps
 Manual para projetores Benq: https://images.colombo.com.br/produtos/769811/769811_1438885888416.pdf
 Seu protocolo de funcionamento é o rs232 disponível em:https://benqimage.blob.core.windows.net/driver-us-file/RS232-commands_all%20Product%20Lines.pdf
 
-Para Instalar abra um terminal com Ctrl+Alt+T ou abra-o graficamente em sua distro favorita baseada no ubuntu.
-Navegue até a sua pasta, e digite ou copie e cole em seu terminal:
-	
-	$ sudo dpkg -i lampada-projetor-proinfo.deb
-	
-Para remover:
-
-	$ sudo apt-get remove lampada-projetor-proinfo.deb
 
 Exemplos de comandos para o controle do projetor, A ideia é serem executados de maneira automatica, então só os coloquei aqui para facilitar a compreenção:
 
