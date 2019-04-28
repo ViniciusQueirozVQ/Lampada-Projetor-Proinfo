@@ -4,8 +4,9 @@
    chmod +x /usr/lampada-proinfo-ctl/projetor-o*
 
 # Garantindo participacao no grupo dialout
-   adduser professor dialout
-   adduser root dialout
+   user=`getent passwd | cut -d \: -f1 | tail -n 1`
+   gpasswd -a $user dialout
+   gpasswd -a root dialout
 # Iniciando Servicos
    systemctl enable projetor-on.service
    systemctl enable projetor-off.service
