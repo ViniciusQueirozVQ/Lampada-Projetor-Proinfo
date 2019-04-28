@@ -1,9 +1,9 @@
 Package:lampada-projetor-proinfo
-Version: 0.1
+Version: 0.2
 Priority:
 Architecture: all
 Essential:
-Depends:
+Depends: xterm
 Pre-depends:
 Suggests:
 Installed-Size:10,6
