@@ -11,8 +11,6 @@ if [ "$isReboot" == "" ]; then
            ;;
            
            *) # If the projector manufacturer is benq or others.
-             # cd /lib/lampada-projetor-proinfo-libs/
-             # cat poff.txt > /dev/ttyS1 
              echo -e "\x0D*pow=off#\x0D" > /dev/ttyS1
            ;;
            
