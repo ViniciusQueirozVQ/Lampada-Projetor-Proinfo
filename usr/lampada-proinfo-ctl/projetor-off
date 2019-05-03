@@ -4,7 +4,7 @@ date=`date`
 if [ "$isReboot" == "" ]; then
    /bin/epson-projector-cmd poweroff
    echo -e "\x0D*pow=off#\x0D" > /dev/ttyS1
-   echo -e "desligou às $date\n"
+   echo -e "desligou às $date\n" >> ~/lamp.log
 
 fi
 exit
