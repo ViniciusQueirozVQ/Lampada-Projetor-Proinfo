@@ -1,0 +1,27 @@
+#!/bin/bash
+
+if [ "$(id -u)" != "0" ]; then
+ echo "need root"
+ exit
+fi
+
+#Copia dos arquivos
+ 
+cp -r usr/ /usr
+cp -r etc/ /etc
+cp -r bin/ /bin
+
+#Permissão de Execução
+   chmod +x /bin/epson-projector-cmd
+   chmod +x /usr/projector-lamp
+   
+# Garantindo participacao no grupo dialout
+   user=`getent passwd | cut -d \: -f1 | tail -n 1`
+   gpasswd -a $user dialout
+   gpasswd -a root dialout
+
+# Iniciando Servicos
+systemctl enable projector-on.service
+systemctl enable projector-off.service
+systemctl start projector-off.service
+systemctl start projector-on.service
