@@ -1,0 +1,10 @@
+[Unit]
+Description=Turn on projector lamp
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/usr/projector-lamp -on
+
+[Install]
+WantedBy=multi-user.target

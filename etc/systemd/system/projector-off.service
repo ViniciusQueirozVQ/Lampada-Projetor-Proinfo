@@ -1,0 +1,12 @@
+[Unit]
+Description=Shutdown projector lamp
+Conflicts=reboot.target
+
+[Service]
+Type=oneshot
+User=root
+RemainAfterExit=true
+ExecStop=/usr/projector-lamp -off
+
+[Install]
+WantedBy=multi-user.target
