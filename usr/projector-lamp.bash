@@ -20,5 +20,5 @@ case $1 in
    exit 1
       ;;
 esac
-
-echo "`date` $1" >> /var/log/lamp.log
+#LOG
+echo "$1,`date +%F","%T`" >> /var/log/lamp.log
