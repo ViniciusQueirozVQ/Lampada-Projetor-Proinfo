@@ -4,7 +4,7 @@ Description=Executado ao Ligar
 [Service]
 Type=oneshot
 User=root
-ExecStart=/usr/lampada-proinfo-ctl/projetor-on
+ExecStart=/usr/projector-lamp -on
 
 [Install]
 WantedBy=multi-user.target
