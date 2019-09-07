@@ -1,5 +1,5 @@
 [Unit]
-Description=Shutdown projector lamp
+Description=Shutdown projector lamp proinfo
 Conflicts=reboot.target
 
 [Service]
