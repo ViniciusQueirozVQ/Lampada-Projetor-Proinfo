@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#Author: ViniciusQueiroz-VQ
 if [ "$(id -u)" != "0" ]; then
  echo "need root"
  exit
