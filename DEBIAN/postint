@@ -1,7 +1,7 @@
 #!/bin/bash
 #Permissão de Execução
    chmod +x /bin/epson-projector-cmd
-   chmod +x /usr/projector-lamp
+   chmod +x /bin/projector-lamp
    
 # Garantindo participacao no grupo dialout
    user=`getent passwd | cut -d \: -f1 | tail -n 1`

@@ -6,7 +6,7 @@ Conflicts=reboot.target
 Type=oneshot
 User=root
 RemainAfterExit=true
-ExecStop=/usr/projector-lamp -off
+ExecStop=/bin/projector-lamp -off
 
 [Install]
 WantedBy=multi-user.target

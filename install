@@ -1,5 +1,6 @@
 #!/bin/bash
 #Author: ViniciusQueiroz-VQ
+
 if [ "$(id -u)" != "0" ]; then
  echo "need root"
  exit
@@ -9,11 +10,10 @@ fi
  
 cp -r usr/ /usr
 cp -r etc/ /etc
-cp -r bin/ /bin
 
 #Permissão de Execução
    chmod +x /bin/epson-projector-cmd
-   chmod +x /usr/projector-lamp
+   chmod +x /bin/projector-lamp
    
 # Garantindo participacao no grupo dialout
    user=`getent passwd | cut -d \: -f1 | tail -n 1`
