@@ -1,4 +1,5 @@
 #!/bin/bash
+#Author ViniciusQueiroz-VQ
 #Permissão de Execução
    chmod +x /bin/epson-projector-cmd
    chmod +x /bin/projector-lamp
