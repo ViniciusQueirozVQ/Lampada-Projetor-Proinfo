@@ -1,4 +1,5 @@
 #!/bin/bash
+#Author: ViniciusQueiroz-VQ
 
 case $1 in
    "-on")
