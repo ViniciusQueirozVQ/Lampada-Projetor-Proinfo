@@ -1,5 +1,5 @@
 # pc-projetor-proinfo
-Inicialização e desligamento automático do pc/projetor [Proinfo], pela porta serial para Ubuntu 18.04 LTS (Bionic) e derivados.
+Inicialização e desligamento automático do pc/projetor [Proinfo], pela porta serial para Ubuntu 19.04 LTS (Disco Dingo) e derivados.
 
 O Projetor Benq MS510 está dentro do Projetor Proinfo do Ministério da Educação ([FNDE 42/2010]).
 O Projetor Epson está dentro do Projetor Proinfo do Ministério da Educação      ([FNDE 72/2013])

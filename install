@@ -15,12 +15,12 @@ cp -r etc/ /etc
    chmod +x /bin/epson-projector-cmd
    chmod +x /bin/projector-lamp
    
-# Garantindo participacao no grupo dialout
+# Garantindo participação no grupo dialout
    user=`getent passwd | cut -d \: -f1 | tail -n 1`
    gpasswd -a $user dialout
    gpasswd -a root dialout
 
-# Iniciando Servicos
+# Iniciando Serviços
 systemctl enable projector-on.service
 systemctl enable projector-off.service
 systemctl start projector-off.service
