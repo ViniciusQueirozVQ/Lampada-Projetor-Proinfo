@@ -1,6 +1,6 @@
 #!/bin/bash
 #Author ViniciusQueiroz-VQ
-#Permissão de Execução
+#Permissão de Execuçãoq
    chmod +x /bin/epson-projector-cmd
    chmod +x /bin/projector-lamp
    
