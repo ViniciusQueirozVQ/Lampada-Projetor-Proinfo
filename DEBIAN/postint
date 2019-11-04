@@ -5,8 +5,8 @@
    chmod +x /bin/projector-lamp
    
 # Garantindo participacao no grupo dialout
-   user=`getent passwd | cut -d \: -f1 | tail -n 1`
-   gpasswd -a $user dialout
+   #user=`getent passwd | cut -d \: -f1 | tail -n 1`
+   gpasswd -a $USER dialout
    gpasswd -a root dialout
 
 # Iniciando Servicos
